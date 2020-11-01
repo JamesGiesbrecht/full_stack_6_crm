@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to 'All', index_path %>
+      <%= link_to 'Alphabetized', alphabetized_path %>
+      <%= link_to 'Missing Emails', missing_email_path %>
+    </nav>
     <%= yield %>
   </body>
 </html>
