@@ -1,0 +1,19 @@
+<div class="card">
+  <% if customer.image.present? %>
+    <div class="card-image">
+      <%= image_tag customer.image %>
+    </div>
+  <% end %>
+  <div class="card-content">
+    <h4><b><%= customer.name %></b></h4>
+    <% if customer.phone.present? %>
+      <p><%= customer.phone %></p>
+    <% end %>
+    <% if customer.email.present? %>
+      <p><%= customer.email %></p>
+    <% end %>
+    <% if customer.notes.present? %>
+      <p><%= customer.notes %></p>
+    <% end %>
+  </div>
+</div>
